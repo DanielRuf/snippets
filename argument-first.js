@@ -1,0 +1,1 @@
+const firstArg = process.argv[2]
