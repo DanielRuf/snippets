@@ -1,5 +1,6 @@
 const supportsColors = 
-    typeof process.stdout.hasColors !== 'undefined'
+    typeof process.stdout.hasColors !== 'undefined' &&
+    argvProcessed.keys.includes('--color')
         ? process.stdout.hasColors()
         : false;
 
